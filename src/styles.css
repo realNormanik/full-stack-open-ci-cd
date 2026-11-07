@@ -591,3 +591,78 @@ a {
     transform: none;
   }
 }
+
+/* GitHub corner */
+.github {
+  z-index: 2;
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+/* Triangle background */
+.github-triangle {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-left: 200px solid transparent;
+  border-bottom: 200px solid #343535;
+}
+
+/* GitHub content */
+.github-content {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  transform: rotate(-45deg);
+}
+
+/* GitHub link */
+.github-link {
+  font-size: 16px;
+  font-family: monospace;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px 24px 24px;
+  margin: 0;
+  margin-bottom: -20px;
+  transition: color 150ms cubic-bezier(1, -0.115, 0.975, 0.855);
+}
+
+.github-link:hover {
+  color: #a6a6a6;
+}
+
+/* GitHub link text */
+.github-text {
+  color: currentColor;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* GitHub icon */
+.github-icon {
+  width: 35px;
+  height: 35px;
+  fill: currentColor;
+}

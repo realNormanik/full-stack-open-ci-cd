@@ -2,8 +2,6 @@
 
 This project implements a continuous integration and deployment (CI/CD) workflow for a React-based full-stack Pokedex application. The focus is on setting up automated workflows using GitHub Actions, including linting, testing (unit and end-to-end), and building the project for production.
 
-The production version of the application is available at the link: [View Here](https://full-stack-open-pokedex.pages.dev/)
-
 ## 📜 Certificate of Completion
 With the successful completion of assignments 11.1. through 11.21. of the tenth part of the Full Stack Open course, I received the following certificate from the University of Helsinki:
 
@@ -52,6 +50,7 @@ full-stack-open-pokedex/
 ├── .gitignore
 ├── 11.1_warming_up.md
 ├── app.js
+├── jest.setup.js
 ├── package-lock.json
 ├── package.json
 ├── playwright.config.js
@@ -232,7 +231,7 @@ Due to the fact that both Fly.io and Render are paid services I dumped my applic
   wrangler publish
   ```
 
-📦 The application was made available under `https://full-stack-open-pokedex.pages.dev/`
+📦 The application was made available under `https://part11-pokedex.vercel.app/`
 
 ### 11.11: Automatic deployments
 
@@ -573,7 +572,7 @@ npm run start-prod
 ## 🚀 Demo
 
 You can view a working version of the project here:
-👉 [Vercel]()
+👉 [Vercel](https://part11-pokedex.vercel.app/)
 
 ## 🧠 Notes
 

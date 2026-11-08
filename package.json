@@ -58,6 +58,7 @@
   },
   "jest": {
     "testEnvironment": "jsdom",
+    "setupFiles": ["./jest.setup.js"],
     "testPathIgnorePatterns": ["e2e-tests"]
   }
 }
